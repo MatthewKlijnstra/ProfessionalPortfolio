@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=project/FrontPage.html" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>If you're not redirected automatically, <a href="project/FrontPage.html">click here</a>.</p>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | XR Developer</title>
+  <link rel="stylesheet" href="Assets/CSS/Global.CSS">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Side Navigation -->
+  <nav id="side-nav" class="glass-panel">
+    <ul class="nav-links">
+      <li class="active"><a href="#about" data-section="about">About</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#skills" data-section="skills">Skills</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="nav-indicator"></div>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- Section: About Me -->
+    <section id="about" class="section">
+      <div class="content-container">
+        <h1 class="hero-title">Immersive <span class="text-gradient">Realities</span></h1>
+        <p class="hero-subtitle">XR Developer & Creative Technologist</p>
+        <!-- More content to be added -->
+      </div>
+    </section>
+
+    <!-- Section: Projects -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Selected <span class="text-gradient">Projects</span></h2>
+      <div class="projects-grid">
+        <!-- Project Cards will technically go here -->
+      </div>
+    </section>
+
+    <!-- Section: Skills -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Technical <span class="text-gradient">Arsenal</span></h2>
+      <!-- Skills content -->
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Connect</h2>
+      <!-- Contact content -->
+    </section>
+
+  </main>
+
+  <script src="Assets/JS/Global.JS" defer></script>
+</body>
+
 </html>

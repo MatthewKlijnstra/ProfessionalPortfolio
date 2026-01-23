@@ -1,0 +1,166 @@
+/* Global.CSS - Design System & Base Styles */
+/* Core Identity: Modern, Sleek, Tech-forward, XR-inspired */
+
+:root {
+    /* -- Color Palette -- */
+    /* Base Colors */
+    --color-bg-deep: #050507;
+    /* Deepest black/navy */
+    --color-bg-panel: rgba(20, 20, 25, 0.6);
+    /* Glassy panel background */
+
+    /* Text Colors */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #a0a0b0;
+    --color-text-muted: #505060;
+
+    /* Accents - Neon Gradients */
+    --color-accent-primary: #7000ff;
+    /* Electric Purple */
+    --color-accent-secondary: #00e5ff;
+    /* Cyan */
+    --color-accent-tertiary: #ff0055;
+    /* Neon Pink */
+
+    /* Gradients */
+    --gradient-main: linear-gradient(135deg, var(--color-bg-deep) 0%, #0a0a12 100%);
+    --gradient-neon-mesh: radial-gradient(circle at 10% 20%, rgba(112, 0, 255, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.15) 0%, transparent 40%);
+    --gradient-glass: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+
+    /* -- Typography -- */
+    --font-family-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-size-base: 16px;
+    --font-size-h1: 4rem;
+    --font-size-h2: 2.5rem;
+    --font-size-h3: 1.5rem;
+
+    /* -- Spacing & Layout -- */
+    --spacing-unit: 8px;
+    --nav-width: 80px;
+    /* Minimal side nav width */
+
+    /* -- Effects -- */
+    --blur-glass: 12px;
+    --border-glass: 1px solid rgba(255, 255, 255, 0.1);
+    --shadow-glow: 0 0 20px rgba(112, 0, 255, 0.2);
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* -- Reset & Base -- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-main);
+    background-color: var(--color-bg-deep);
+    background-image: var(--gradient-neon-mesh);
+    background-attachment: fixed;
+    /* Parallax-like fixed background */
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    font-size: var(--font-size-base);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-smooth);
+}
+
+ul {
+    list-style: none;
+}
+
+/* -- Utilities -- */
+.glass-panel {
+    background: var(--color-bg-panel);
+    backdrop-filter: blur(var(--blur-glass));
+    -webkit-backdrop-filter: blur(var(--blur-glass));
+    border: var(--border-glass);
+    border-radius: 16px;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--color-accent-secondary), var(--color-accent-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* -- Layout & Navigation -- */
+#side-nav {
+    position: fixed;
+    top: 50%;
+    left: var(--spacing-unit);
+    transform: translateY(-50%);
+    width: var(--nav-width);
+    height: auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.nav-links li {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    padding: 10px 5px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links li.active a {
+    color: var(--color-accent-secondary);
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+#main-content {
+    margin-left: calc(var(--nav-width) + 2rem);
+    padding: 0 2rem;
+    min-height: 100vh;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.hero-title {
+    font-size: var(--font-size-h1);
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
