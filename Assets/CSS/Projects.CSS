@@ -1,0 +1,145 @@
+/* Projects.CSS - Styles for Variable Height Project Cards */
+
+/* -- Masonry Layout Wrapper -- */
+.projects-masonry {
+    column-count: 3;
+    column-gap: 2rem;
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 1400px;
+    /* Allow wider spread */
+    margin: 0 auto;
+}
+
+/* -- Project Card Component -- */
+.project-card {
+    background: var(--color-bg-panel);
+    backdrop-filter: blur(var(--blur-glass));
+    -webkit-backdrop-filter: blur(var(--blur-glass));
+    border: var(--border-glass);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    /* Spacing between vertical items */
+    break-inside: avoid;
+    /* Prevent card from splitting across columns */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    display: flex;
+    /* Ensure internal layout is solid */
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(112, 0, 255, 0.15);
+    border-color: rgba(112, 0, 255, 0.5);
+}
+
+/* -- Card Image -- */
+.card-image-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* Height is determined by the image content (variable) */
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.project-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+/* -- Card Content -- */
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+/* -- Tags -- */
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+    /* Push to bottom if content varies */
+}
+
+.tech-tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition-smooth);
+}
+
+.project-card:hover .tech-tag {
+    background: rgba(112, 0, 255, 0.1);
+    color: var(--color-accent-secondary);
+    border-color: rgba(112, 0, 255, 0.3);
+}
+
+/* -- Links/Overlay -- */
+/* Optional: Make the whole card clickable or add a button */
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-accent-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-link svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.card-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* -- Responsive Breakpoints -- */
+@media (max-width: 1100px) {
+    .projects-masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 700px) {
+    .projects-masonry {
+        column-count: 1;
+    }
+}

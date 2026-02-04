@@ -7,6 +7,7 @@
   <title>Portfolio | XR Developer</title>
   <link rel="stylesheet" href="Assets/CSS/Global.CSS">
   <link rel="stylesheet" href="Assets/CSS/About.CSS">
+  <link rel="stylesheet" href="Assets/CSS/Projects.CSS">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -31,15 +32,14 @@
     <!-- Section: About Me -->
     <section id="about" class="section">
       <div class="content-container">
-
         <!-- Text Content -->
         <div class="about-content">
-          <h1 class="hero-title">Immersive <span class="text-gradient">Realities</span></h1>
-          <p class="hero-subtitle">XR Developer & Creative Technologist</p>
+          <h1 class="hero-title">Matthew <span class="text-gradient">Klijnstra</span></h1>
+          <p class="hero-subtitle">XR Developer & Code Enthusiast</p>
           <p class="about-description">
-            Pushing the boundaries of spatial computing and interactive experiences.
-            I craft digital worlds that blend seamlessly with reality, focusing on intuitive UX and high-performance
-            graphics.
+            An 18 year old student developer from the Netherlands with a passion for immersive technology.
+            I enjoy creating unique and interactive experiences, and I'm always looking for new challenges to
+            tackle. Want to see more about me? Click on the image to go to my extended about page!
           </p>
           <!-- Call to Action (Example) -->
           <a href="#projects" class="cta-button">View Work</a>
@@ -59,8 +59,92 @@
     <!-- Section: Projects -->
     <section id="projects" class="section">
       <h2 class="section-title">Selected <span class="text-gradient">Projects</span></h2>
-      <div class="projects-grid">
-        <!-- Project Cards will technically go here -->
+
+      <div class="projects-masonry">
+
+        <!-- Mock Project 1: Standard Landscape -->
+        <article class="project-card">
+          <div class="card-image-wrapper">
+            <!-- Using the placeholder image -->
+            <img src="Assets/Images/project-placeholder.png" alt="Floors VR" class="card-image">
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3 class="card-title">Floors VR</h3>
+            </div>
+            <p class="card-description">
+              VR thriller with an added feuture of a haptic suit to enhance the experience.
+            </p>
+            <div class="card-tags">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">XR Interaction Toolkit</span>
+              <span class="tech-tag">B-Haptics</span>
+            </div>
+            <a href="#" class="card-link">View Project
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Mock Project 2: Poster Aspect/Taller Content -->
+        <article class="project-card">
+          <div class="card-image-wrapper">
+            <!-- Using the placeholder image -->
+            <img src="Assets/Images/project-placeholder.png" alt="Floors VR" class="card-image">
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3 class="card-title">Spatial Architecture</h3>
+            </div>
+            <p class="card-description">
+              An AR application for visualizing architectural blueprints in real-time.
+              Integrated with BIM software to allow on-site modifications and layer toggling.
+              This project explores the utility of mixed reality in the construction industry.
+            </p>
+            <div class="card-tags">
+              <span class="tech-tag">Unreal Engine 5</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">ARKit</span>
+              <span class="tech-tag">BIM</span>
+            </div>
+            <a href="#" class="card-link">View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Mock Project 3: Another Landscape -->
+        <article class="project-card">
+          <div class="card-image-wrapper">
+            <img src="Assets/Images/project-placeholder.png" alt="Portfolio Website" class="card-image"
+              style="filter: hue-rotate(45deg);">
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3 class="card-title">Portfolio v2.0</h3>
+            </div>
+            <p class="card-description">
+              The website you are looking at right now. Designed with a focus on dark aesthetics, glassmorphism, and
+              smooth interactions.
+            </p>
+            <div class="card-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="#" class="card-link">View Source
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
       </div>
     </section>
 
