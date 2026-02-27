@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhisSis | Project Details</title>
+    <link rel="stylesheet" href="CSS/Global.CSS">
+    <link rel="stylesheet" href="CSS/Projects.CSS">
+    <link rel="stylesheet" href="CSS/SubPage.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Minimal Nav/Back Button -->
+    <nav id="back-nav" class="glass-panel">
+        <a href="../index.html#projects" class="back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="project-hero">
+        <div class="hero-image-container">
+            <img src="Images/Projects/WhisSis/WhisSisMain.png" alt="WhisSis Hero Image" class="hero-bg-img">
+        </div>
+        <div class="hero-overlay glass-panel">
+            <h1 class="project-title text-gradient">WhisSis</h1>
+            <p class="project-tagline">Space scavengers worst nightmare.</p>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="project-details" class="section">
+        <div class="project-grid">
+            <!-- Left Column: Details & Media -->
+            <div class="project-info">
+                <section class="info-section">
+                    <h2 class="section-subtitle">About the Project</h2>
+                    <p>
+                        A spacelab that you ventured uppon, only to find out that you are not alone.
+                        On entering the facility, the airlock breaks down and going back is not an option.
+                        Now forced to go deeper into the facility, to fix the airlock, you'll have to face the horrors
+                        that await you.
+                    </p>
+                </section>
+
+                <section class="info-section">
+                    <h2 class="section-subtitle">My Role & Features</h2>
+                    <ul class="feature-list">
+                        <li>Designed and implemented the core gameplay loop.</li>
+                        <li>Created immersive VR interactions using XR Interaction Toolkit.</li>
+                        <li>Programmed custom monster AI and pathfinding.</li>
+                        <li>Optimized lighting and assets for smooth VR performance.</li>
+                    </ul>
+                </section>
+
+                <!-- Gallery -->
+                <section class="info-section gallery-section">
+                    <h2 class="section-subtitle">Gallery</h2>
+                    <div class="media-gallery">
+                        <img src="Images/Projects/WhisSis/WhisSis1.png" alt="Screenshot 2" class="gallery-img">
+                        <img src="Images/Projects/WhisSis/WhisSis2.png" alt="Screenshot 3" class="gallery-img">
+                        <img src="Images/Projects/WhisSis/WhisSis3.png" alt="Screenshot 4" class="gallery-img">
+                        <img src="Images/Projects/WhisSis/WhisSis4.png" alt="Screenshot 5" class="gallery-img">
+                        <img src="Images/Projects/WhisSis/WhisSis5.png" alt="Screenshot 6" class="gallery-img">
+                        <img src="Images/Projects/WhisSis/WhisSis6.png" alt="Screenshot 7" class="gallery-img">
+                        <img src="Images/Projects/WhisSis/WhisSis7.png" alt="Screenshot 8" class="gallery-img">
+                        <img src="Images/Projects/WhisSis/WhisSisMain.png" alt="Screenshot 1" class="gallery-img">
+                        <!-- Add more project specific images here dynamically when cloning standard template -->
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Metadata Panel -->
+            <aside class="project-sidebar">
+                <div class="metadata-panel glass-panel">
+                    <h3 class="panel-title">Project Info</h3>
+
+                    <div class="meta-item">
+                        <span class="meta-label">Role:</span>
+                        <span class="meta-value">Lead Programmer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Timeline:</span>
+                        <span class="meta-value">3 Months</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Platform:</span>
+                        <span class="meta-value">PC VR (SteamVR / Meta Quest Link)</span>
+                    </div>
+
+                    <div class="meta-tags">
+                        <h4 class="meta-subtitle">Tech Stack</h4>
+                        <div class="card-tags">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">XR Interaction Toolkit</span>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <!-- For projects like Github repo or itch.io pages -->
+                        <a href="#" class="cta-button">View Source Code</a>
+                        <a href="#" class="cta-button secondary-btn">Download Demo</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="JS/Global.JS" defer></script>
+</body>
+
+</html>
