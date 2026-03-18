@@ -1,31 +1,12 @@
 // MoreAboutMe.JS - Logic for the Hexablock interaction and dynamic image carousel
 
 const interestsData = {
-    xr: {
-        title: "Extended Reality (VR/AR)",
-        desc: "My deepest passion lies in creating immersive worlds. Working primarily with Unity, the XR Interaction Toolkit, and Meta Quest, I love building mechanics that feel tactile and environments that transport the player completely.",
-        images: ["Images/Projects/WhisSis/WhisSisMain.png", "Images/Projects/WhisSis/WhisSis1.png"] // Fallbacks since specific interest images may not exist yet
+    selfdefense: {
+        title: "Selfdefense",
+        desc: "I have been training in selfdefense for 8 years now, and I'm not thinking of stopping anytime soon. The selfdefense style I practice is called American Kenpo Karate. It's a very practical style that focuses on self-preservation and de-escalation. It's also a lot of fun!",
+        images: ["Images/AboutMe/Selfdefense/Selfdefense1.jpg", "Images/AboutMe/Selfdefense/Selfdefense2.jpg", "Images/AboutMe/Selfdefense/Selfdefense3.jpg", "Images/AboutMe/Selfdefense/Selfdefense4.jpg"]
     },
-    gamedev: {
-        title: "Game Development",
-        desc: "From the core gameplay loop to custom AI pathfinding, I thrive on the technical challenges of bringing a game to life. I focus on clean architecture, optimizing performance, and ensuring the game logic is solid and maintainable.",
-        images: ["Images/Projects/DungeonShooter/DungeonShooterMain.png", "Images/Projects/LittleJumper/LittleJumperMain.png"]
-    },
-    hardware: {
-        title: "Hardware Integration",
-        desc: "I love pushing the boundaries of standard input. Integrating things like the bHaptics suit in VR or creating custom multi-platform input systems demonstrates my desire to bridge the gap between human and machine.",
-        images: ["Images/Projects/Floors/FloorsMain.png"]
-    },
-    code: {
-        title: "Clean Code & Architecture",
-        desc: "Whether it's C# in Unity, Blueprints in Unreal 5, or building scalable web systems, I take pride in writing elegant code. I view programming not just as a tool, but as a craft.",
-        images: ["Images/Projects/VRRecording/VRRecordingMain.png"]
-    },
-    art3d: {
-        title: "3D Rendering & Tech Art",
-        desc: "I have a keen eye for optimizing lighting and manipulating shaders to achieve maximum performance without sacrificing visual fidelity. I enjoy the intersection where art and heavy technical math meet.",
-        images: ["Images/Projects/CoastalCookout/CoastalCookoutMain.png"]
-    }
+
 };
 
 document.addEventListener('DOMContentLoaded', () => {
