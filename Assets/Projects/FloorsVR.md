@@ -12,15 +12,24 @@ tags:
 heroImage: Images/Projects/Floors/FloorsMain.png
 gallery:
   - Images/Projects/Floors/FloorsMain.png
+  - Images/Projects/Floors/Floors1.png
+  - Images/Projects/Floors/Floors2.png
+  - Images/Projects/Floors/Floors3.png
+  - Images/Projects/Floors/Floors4.png
+  - Images/Projects/Floors/Floors5.png
+  - Images/Projects/Floors/Floors6.png
+  - Images/Projects/Floors/Floors7.png
+sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
+downloadLink: http://lzkchr.itch.io/whissis
 ---
 
 <section class="info-section">
     <h2 class="section-subtitle">About the Project</h2>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        VR thriller with an added feuture of a haptic suit to enhance the experience.
     </p>
     <p>
-        VR thriller with an added feature of a haptic suit to enhance the experience. This project focuses on immersion and utilizing advanced haptic feedback to elevate the horror and suspense elements of the game.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
     </p>
 </section>
 
@@ -28,9 +37,9 @@ gallery:
     <h2 class="section-subtitle">My Role & Features</h2>
     <ul class="feature-list">
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
-        <li>Duis aute irure dolor in reprehenderit in voluptate.</li>
+        <li>Praesent vitae lectus ac tellus aliquet iaculis.</li>
+        <li>Donec scelerisque libero a ante dignissim, ac accumsan erat tristique.</li>
+        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
     </ul>
 </section>
 
@@ -41,19 +50,60 @@ gallery:
 <div class="feature-segment">
     <div class="code-container">
         <pre><code class="language-csharp">
-// Example Code Snippet: Lorem Ipsum
-public class LoremIpsum : MonoBehaviour {
+// Example Code Snippet: Enemy AI Pathfinding
+public class EnemyAI : MonoBehaviour {
+    private NavMeshAgent agent;
+    public Transform player;
+
     void Start() {
-        Debug.Log("Lorem ipsum dolor sit amet");
+        agent = GetComponent&lt;NavMeshAgent&gt;();
     }
+
+    void Update() {
+        if(Vector3.Distance(transform.position, player.position) &lt; 15f) {
+            agent.SetDestination(player.position);
+        }
+    }
+
 }
-        </code></pre>
-    </div>
-    <div class="video-container">
-        <!-- Placeholder Video -->
-        <video autoplay loop muted playsinline>
-            <source src="dummy.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+</code></pre>
+
+</div>
+<div class="video-container">
+<video autoplay loop muted playsinline>
+<source src="dummy.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+</div>
+
+<div class="feature-segment">
+    <div class="code-container">
+        <pre><code class="language-csharp">
+// Example Code Snippet: VR Interactions
+public class AirlockDoor : MonoBehaviour {
+    private Animator animator;
+
+    void Start() {
+        animator = GetComponent&lt;Animator&gt;();
+    }
+
+    public void OpenDoor() {
+        animator.SetTrigger("Open");
+    }
+
+}
+</code></pre>
+
+</div>
+<div class="video-container">
+<iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+</div>
+
 </div>

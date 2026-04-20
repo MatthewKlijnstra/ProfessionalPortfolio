@@ -19,7 +19,7 @@ gallery:
   - Images/Projects/WhisSis/WhisSis7.png
   - Images/Projects/WhisSis/WhisSisMain.png
 sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
-downloadLink: https://help-my-balls.itch.io/whissis
+downloadLink: http://lzkchr.itch.io/whissis
 ---
 
 <section class="info-section">
@@ -63,15 +63,18 @@ public class EnemyAI : MonoBehaviour {
             agent.SetDestination(player.position);
         }
     }
+
 }
-        </code></pre>
-    </div>
-    <div class="video-container">
-        <video autoplay loop muted playsinline>
-            <source src="dummy.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+</code></pre>
+
+</div>
+<div class="video-container">
+<video autoplay loop muted playsinline>
+<source src="dummy.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
 </div>
 
 <div class="feature-segment">
@@ -88,15 +91,18 @@ public class AirlockDoor : MonoBehaviour {
     public void OpenDoor() {
         animator.SetTrigger("Open");
     }
+
 }
-        </code></pre>
-    </div>
-    <div class="video-container">
-        <iframe
+</code></pre>
+
+</div>
+<div class="video-container">
+<iframe
             src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-    </div>
+</iframe>
+</div>
+
 </div>
