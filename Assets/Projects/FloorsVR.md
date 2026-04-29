@@ -1,9 +1,9 @@
 ---
 title: Floors VR
-tagline: VR thriller with an added feuture of a haptic suit to enhance the experience.
-role: Developer
-timeline: TBD
-platform: VR
+tagline: The game that will haunt your nerves
+role: Lead Developer
+timeline: 5 Weeks
+platform: Unity
 tags:
   - Unity
   - C#
@@ -26,20 +26,31 @@ downloadLink: http://lzkchr.itch.io/whissis
 <section class="info-section">
     <h2 class="section-subtitle">About the Project</h2>
     <p>
-        VR thriller with an added feuture of a haptic suit to enhance the experience.
+        VR thriller with an added feuture of a haptic suit to enhance the experience. You'll know when a monster is near you.
     </p>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        --------------------------------------------------------------------------------------------------
     </p>
+    <p>
+        In this 5 week project we got challanged to create a game with a piece of hardware we never used before. For me,
+        that was the b-haptics haptic suit. Together with my team members we dicided to create a VR Horror game, seeming as the Haptic suit would be perfect for that genre.        
+    </p>
+    <p>
+        --------------------------------------------------------------------------------------------------
+    </p>
+    <p>
+        One special thing about this project was that our first 4 weeks where without any artists. The purpose was to prototype our game mechanics, using placeholder assets. This added an extra layer of new discorvery, as we had never used prototyping before this project. 
+    </p>
+    
 </section>
 
 <section class="info-section">
     <h2 class="section-subtitle">My Role & Features</h2>
     <ul class="feature-list">
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Praesent vitae lectus ac tellus aliquet iaculis.</li>
-        <li>Donec scelerisque libero a ante dignissim, ac accumsan erat tristique.</li>
-        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
+        <li>B-Haptics Integration</li>
+        <li>B-Haptics Effects</li>
+        <li>Jumpscare mechanics</li>
+        <li>XR Interaction Toolkit</li>
     </ul>
 </section>
 

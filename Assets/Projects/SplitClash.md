@@ -23,7 +23,7 @@ gallery:
   - Images/Projects/SplitClash/SplitClash8.png
   - Images/Projects/SplitClash/SplitClash9.png
 sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
-downloadLink: http://lzkchr.itch.io/whissis
+downloadLink: https://chiisana101.itch.io/split-clash
 ---
 
 <section class="info-section">

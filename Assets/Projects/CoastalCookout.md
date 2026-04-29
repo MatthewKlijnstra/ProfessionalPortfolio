@@ -1,12 +1,13 @@
 ---
 title: Coastal Cookout
-tagline: Coastal Cookout is a single player version of the popular game "Cookout".
-role: Developer
-timeline: TBD
-platform: VR
+tagline: Start your cooking job on the pirate ship, recreation of "Over cooked"
+role: Lead Developer
+timeline: 9 Weeks
+platform: Unity
 tags:
   - Unity
   - C#
+  - VR
   - XR Interaction Toolkit
 heroImage: Images/Projects/CoastalCookout/CoastalCookoutMain.png
 gallery:
@@ -24,17 +25,26 @@ downloadLink: http://lzkchr.itch.io/whissis
         Coastal Cookout is a single player version of the popular game "Cookout". The theming is set in a coastal environment with a focus on seafood. It features Pirate's and other sea creatures for customers and a variety of seafood to cook.
     </p>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+    --------------------------------------------------------------------------------------------------
+    </p>
+    <p>
+        In this 9 week project, we where tasked to design, create and publish a game. We received a theme from school and had to come up with a game idea that fit the theme. Our group came up with the idea for Coastal Cookout, a single player version of the popular game "Cookout". With that a few of my classmates and I had the idea to make it a VR game. This then became the base for our game, we wanted to challenge ourselves with this project and create something we hadn't done before.
+    </p>
+    <p>
+    --------------------------------------------------------------------------------------------------
+    </p>
+    <p>
+        As a Lead developer my tasks varied from making mechanics to helping out other teammembers with their tasks. But I was also sub Scrum master of our group, I was responsible for the daily's and other scrum events in case our Scrum master couldn't make it.
     </p>
 </section>
 
 <section class="info-section">
     <h2 class="section-subtitle">My Role & Features</h2>
     <ul class="feature-list">
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Praesent vitae lectus ac tellus aliquet iaculis.</li>
-        <li>Donec scelerisque libero a ante dignissim, ac accumsan erat tristique.</li>
-        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
+        <li>Lead Developer</li>
+        <li>Sub Scrum Master</li>
+        <li>Random Receipt Generator</li>
+        <li>Station Logic</li>
     </ul>
 </section>
 

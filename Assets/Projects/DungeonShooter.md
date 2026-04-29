@@ -1,8 +1,8 @@
 ---
 title: Dungeon Shooter 2D
-tagline: Dungeon Shooter 2D is my first itteration of a dungeon crawler game.
-role: Developer
-timeline: TBD
+tagline: The Work in progress dungeon crawler with elements and tech tree system
+role: Developer, Designer & Publisher
+timeline: On going
 platform: Multi Platform
 tags:
   - Unity
@@ -29,17 +29,28 @@ downloadLink: http://lzkchr.itch.io/whissis
         Dungeon Shooter 2D is my first itteration of a dungeon crawler game. It started with the idea to make a realistic gun gameplay and now turend in to a big idea with elemental powers and more.
     </p>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        --------------------------------------------------------------------------------------------------
+    </p>
+    <p>
+        The game is currently in early development, and I'm still working on getting the base game written down. But I already have some cool idea's for the future.
+        For example, the TechTree mechanic. You'll gather points by playing games. With these points you can upgrade your weapons and unlock new features. These points are seperate for each weapon. This gives you a reason to play with every weapon and not just stick to one.
+    </p>
+    <p>
+    --------------------------------------------------------------------------------------------------
+    </p>
+    <p>
+        The insipration for the TechTree realy derives from the game World of Tanks. Together with this inspiration and the idea to make a classic dungeon crawler, I came up with the idea for Dungeon Shooter 2D.
     </p>
 </section>
 
 <section class="info-section">
-    <h2 class="section-subtitle">My Role & Features</h2>
+    <h2 class="section-subtitle">My Role & Features "So far"</h2>
     <ul class="feature-list">
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Praesent vitae lectus ac tellus aliquet iaculis.</li>
-        <li>Donec scelerisque libero a ante dignissim, ac accumsan erat tristique.</li>
-        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
+        <li>The Maker of the game</li>
+        <li>Elemental Powers</li>
+        <li>TechTree System</li>
+        <li>Weapon System</li>
+        <li>Modular grid system for map making</li>
     </ul>
 </section>
 

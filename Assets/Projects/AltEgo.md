@@ -1,11 +1,11 @@
 ---
 title: AltEgo
-tagline: A VR experience where you play as a girl who has a fear of not being good enough.
-role: Developer
+tagline: A carnival gameshow experience
+role: Lead Developer
 timeline: 9 Weeks
-platform: VR
+platform: Unreal Engine 5
 tags:
-  - Unreal Engine 5
+  - Unreal Engine
   - Blueprints
   - VR
   - Motion Capture
@@ -28,8 +28,10 @@ downloadLink: http://lzkchr.itch.io/whissis
     <p>
         A VR experience where you play as a girl who has a fear of not being good enough. This 5 minute gameshow is a dream of hers, in wich she has to face her fears to win. The gameshow is programmed to not be able to fail, yett let's you think you are failing. Eventualy it will all become clear that she is in control, and that the stress on her is all in her own head.
     </p>
+    
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        This was a speacial project for the HLO. The HLO is a Hybrid learning environment(Hybride Leeromgeving in Dutch).
+        My class of 14 and 5 students from the Media College Amsterdam worked together in a group of 19 students to create 5 different games. Each game was based on a theme chosen by a student from the MA. AltEgo was based on the theme of Imposter Syndrome. All the projects where made in Unreal Engine 5 with motion capture and VR included.
     </p>
 </section>
 

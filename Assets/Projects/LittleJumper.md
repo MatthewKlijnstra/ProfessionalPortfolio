@@ -17,7 +17,7 @@ gallery:
   - Images/Projects/LittleJumper/LittleJumper4.png
   - Images/Projects/LittleJumper/LittleJumper5.png
 sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
-downloadLink: http://lzkchr.itch.io/whissis
+downloadLink: https://battlefieldguy.itch.io/little-jumper
 ---
 
 <section class="info-section">
