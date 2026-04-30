@@ -1,8 +1,8 @@
 ---
 title: Little Jumper
-tagline: Jump into the shoes of a little jumper and explore the world of the floating lands.
+tagline: Becarefull to not trip, it's a long way down.
 role: Developer
-timeline: TBD
+timeline: 8 Weeks
 platform: Multi-Platform
 tags:
   - Unity
@@ -26,17 +26,31 @@ downloadLink: https://battlefieldguy.itch.io/little-jumper
         Jump into the shoes of a little jumper and explore the world of the floating lands. A small platformer game built to work with multiple platforms.
     </p>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        --------------------------------------------------------------------------------------------------
     </p>
+    <p>
+        This game has a lot of features, such as a simple but effective movement system, unity animation system and particle effects for a more interactive playstyle, but my personal favorite feature is the camera system I built. I used cinemachine from the unity store to create a smooth and responsive camera system that follows the player in a unique way, which gives the game a more dynamic feel. I also added a good few cutscenes that play during certain moments in the game to make it more immersive and engaging.
+    </p>
+    <p>
+        --------------------------------------------------------------------------------------------------
+    </p>
+    <p>
+        This project was a school assignment where we had to make a platformer game. The goal was to make a game that could be played on multiple platforms. 
+        The platforms I ended up with are PC, steam-deck and HTML. I wanted to make more versions but sadly that wasn't possible in the given time.
+        Luckily I had built in keyboard/mouse and controller support from the start, so you play it from more platforms than planned.
+    </p>
+        
 </section>
 
 <section class="info-section">
     <h2 class="section-subtitle">My Role & Features</h2>
     <ul class="feature-list">
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Praesent vitae lectus ac tellus aliquet iaculis.</li>
-        <li>Donec scelerisque libero a ante dignissim, ac accumsan erat tristique.</li>
-        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
+        <li>Movement system</li>
+        <li>Camera / Cinemachine system</li>
+        <li>Chicken npc</li>
+        <li>Obstacles and traps system</li>
+        <li>Audio Design</li>
+        <li>Level design</li>
     </ul>
 </section>
 

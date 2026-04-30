@@ -1,9 +1,9 @@
 ---
 title: SecondSight
-tagline: In Second Sight you discover how color perception affects your gameplay. The game takes place between the real world and the virtual world of the Others. These creatures do not have perception of color, and want to learn it trough your eyes.
-role: Developer
-timeline: TBD
-platform: Meta Quest
+tagline: Expierence color perception in a group.
+role: Scrum Master / Developer
+timeline: 2.5 Months
+platform: Meta Quest 3
 tags:
   - Unity
   - C#
@@ -28,21 +28,31 @@ downloadLink: http://lzkchr.itch.io/whissis
 <section class="info-section">
     <h2 class="section-subtitle">About the Project</h2>
     <p>
-        In Second Sight you discover how color perception affects your gameplay. The game takes place between the real world and the virtual world of the Others. These creatures do not have perception of color, and want to learn it trough your eyes.
-        The focus lay's on the diffrence between Blue and Green, in this experience you will together with 3 other people make choices about what color is shown on the Screen at that time. The others will then study your actions and discusions ass the colors get increalingly more difficult to indentify.
+        In Second Sight you discover how color perception affects your gameplay. The game takes place between the
+        real world and the virtual world of the Others. These creatures do not have perception of color, and want
+        to learn it trough your eyes.
+        The focus lay's on the diffrence between Blue and Green, in this experience you will together with 3 other
+        people make choices about what color is shown on the Screen at that time. The others will then study your
+        actions and discusions ass the colors get increalingly more difficult to indentify.
     </p>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        --------------------------------------------------------------------------------------------------
+    </p>
+    <p>
+        This project is my first at my internship at XR-Lab. We worked with 6 Artists, 4 Developers and a designer
+        to create this imersive expierence. During this project I had the lead over the project as a Scrum
+        Master, where I was responsible for the daily's and other scrum events. We used Meta Quest 3's passthrough and 
+        occlusion features combined with a physical setup to create a realistic and immersive experience, 
     </p>
 </section>
 
 <section class="info-section">
     <h2 class="section-subtitle">My Role & Features</h2>
     <ul class="feature-list">
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Praesent vitae lectus ac tellus aliquet iaculis.</li>
-        <li>Donec scelerisque libero a ante dignissim, ac accumsan erat tristique.</li>
-        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
+        <li>Scrum Master</li>
+        <li>Git Manager</li>
+        <li>Fish Flock system</li>
+        <li>XR System Integration</li>
     </ul>
 </section>
 

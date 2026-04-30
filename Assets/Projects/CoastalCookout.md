@@ -3,7 +3,7 @@ title: Coastal Cookout
 tagline: Start your cooking job on the pirate ship, recreation of "Over cooked"
 role: Lead Developer
 timeline: 9 Weeks
-platform: Unity
+platform: PC VR / Meta Quest 3
 tags:
   - Unity
   - C#

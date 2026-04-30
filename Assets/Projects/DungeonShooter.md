@@ -2,7 +2,7 @@
 title: Dungeon Shooter 2D
 tagline: The Work in progress dungeon crawler with elements and tech tree system
 role: Developer, Designer & Publisher
-timeline: On going
+timeline: Early Development
 platform: Multi Platform
 tags:
   - Unity

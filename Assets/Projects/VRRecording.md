@@ -1,9 +1,9 @@
 ---
 title: VR-Recording Toolkit
 tagline: A tool that allows you to record your VR movements, and replay them in a virtual environment.
-role: Tool Developer
-timeline: TBD
-platform: VR
+role: XR Developer
+timeline: 8 Weeks
+platform: PC VR
 tags:
   - Unity
   - C#
@@ -18,20 +18,29 @@ downloadLink: http://lzkchr.itch.io/whissis
 <section class="info-section">
     <h2 class="section-subtitle">About the Project</h2>
     <p>
-        VR-Recording Toolkit is a tool that allows you to record your VR movements, and replay them in a virtual environment. This was a special project where the gaol was to give researchers a tool to record and analyze VR movements.
+        VR-Recording Toolkit is a tool that allows you to record your VR movements, and replay them in a virtual environment.
     </p>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+     --------------------------------------------------------------------------------------------------
     </p>
+    <p>
+        In this project I worked together with 2 other students. We had a gottan a special assignment from our teacher to create a tool for researchers at the HU (Hogeschool Utrecht). The assignment was to give them a tool to record and analyze VR movements.
+    </p>
+    <p>
+        --------------------------------------------------------------------------------------------------
+    </p>
+    <p>
+        I was in charge of the XR Intergration and the movement capturing. One of my teamates made the system to convert that data in to a JSON file, and another teamate created the data base to store and retrieve that data.
+    </p>
+    
 </section>
 
 <section class="info-section">
     <h2 class="section-subtitle">My Role & Features</h2>
     <ul class="feature-list">
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Praesent vitae lectus ac tellus aliquet iaculis.</li>
-        <li>Donec scelerisque libero a ante dignissim, ac accumsan erat tristique.</li>
-        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
+        <li>XR Intergration</li>
+        <li>VR movement capturing</li>
+        <li>Replaying feature</li>
     </ul>
 </section>
 
@@ -56,15 +65,18 @@ public class EnemyAI : MonoBehaviour {
             agent.SetDestination(player.position);
         }
     }
+
 }
-        </code></pre>
-    </div>
-    <div class="video-container">
-        <video autoplay loop muted playsinline>
-            <source src="dummy.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+</code></pre>
+
+</div>
+<div class="video-container">
+<video autoplay loop muted playsinline>
+<source src="dummy.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
 </div>
 
 <div class="feature-segment">
@@ -81,15 +93,18 @@ public class AirlockDoor : MonoBehaviour {
     public void OpenDoor() {
         animator.SetTrigger("Open");
     }
+
 }
-        </code></pre>
-    </div>
-    <div class="video-container">
-        <iframe
+</code></pre>
+
+</div>
+<div class="video-container">
+<iframe
             src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-    </div>
+</iframe>
+</div>
+
 </div>

@@ -1,8 +1,8 @@
 ---
 title: Kuru Kuru
-tagline: Kuru Kuru is a fast-paced, top-down, arcade-style game where players control a spinning top.
+tagline: Spin your way trough the modern remake of the classic retro game Kuru Kuru Kururin.
 role: Developer
-timeline: TBD
+timeline: Ongoing
 platform: PC
 tags:
   - Unity
@@ -28,17 +28,22 @@ downloadLink: http://lzkchr.itch.io/whissis
         Kuru Kuru is a fast-paced, top-down, arcade-style game where players control a spinning top. The goal is to complete the level while avoiding obstacles. The game features a unique "spin" mechanic that is always on, and can't be turned off. This makes the game challenging and fun.
     </p>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        --------------------------------------------------------------------------------------------------
+    </p>
+    <p>
+       This project was my actual first game to make at school. The task was a simpel remake of the retro game Kuru Kuru Kururin. But I was so intrigued by the machanics and posibility's that I coded away somuch that I can't say it's just a school project anymore.
     </p>
 </section>
 
 <section class="info-section">
     <h2 class="section-subtitle">My Role & Features</h2>
     <ul class="feature-list">
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Praesent vitae lectus ac tellus aliquet iaculis.</li>
-        <li>Donec scelerisque libero a ante dignissim, ac accumsan erat tristique.</li>
-        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
+        <li>The Maker of the game</li>
+        <li>Obstacles</li>
+        <li>Map System</li>
+        <li>Score System</li>
+        <li>Respawn mechanics</li>
+        <li>Audio Design</li>
     </ul>
 </section>
 

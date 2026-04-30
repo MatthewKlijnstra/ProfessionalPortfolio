@@ -2,8 +2,8 @@
 title: WhisSis
 tagline: Space scavengers worst nightmare.
 role: Lead Programmer
-timeline: 3 Months
-platform: PC VR (SteamVR / Meta Quest Link)
+timeline: 4 Weeks
+platform: PC VR
 tags:
   - Unity
   - C#
@@ -30,15 +30,22 @@ downloadLink: http://lzkchr.itch.io/whissis
         Now forced to go deeper into the facility, to fix the airlock, you'll have to face the horrors
         that await you.
     </p>
+    <p>
+        --------------------------------------------------------------------------------------------------
+    </p>
+    <p>
+        A classic VR shooter. with a team of 4 artists and 3 developers. We had a blast making this game. A lot of easter eggs, lore and thought went into this game.
+        Realy proud of the weapon and granade mechanics I made for this game.
+    </p>
 </section>
 
 <section class="info-section">
     <h2 class="section-subtitle">My Role & Features</h2>
     <ul class="feature-list">
-        <li>Designed and implemented the core gameplay loop.</li>
-        <li>Created immersive VR interactions using XR Interaction Toolkit.</li>
-        <li>Programmed custom monster AI and pathfinding.</li>
-        <li>Optimized lighting and assets for smooth VR performance.</li>
+        <li>Project Lead</li>
+        <li>Weapon system</li>
+        <li>Grenade system</li>
+        <li>A lot of debugging</li>
     </ul>
 </section>
 

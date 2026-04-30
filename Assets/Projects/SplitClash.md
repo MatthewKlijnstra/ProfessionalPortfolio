@@ -1,9 +1,9 @@
 ---
 title: SplitClash
-tagline: SplitClash is a 2D arena fighting game where players can use different characters with unique abilities to fight each other. The game is based off of the game "Clash Royale" but with a design feature of a table touch screen.
+tagline: Battle each other with attacking monsters and defending towers on a touch screen table. Based on Clash Royale.
 role: Developer
-timeline: TBD
-platform: Table Touch Screen
+timeline: 9 Weeks
+platform: Unity
 tags:
   - Unity
   - C#
@@ -32,17 +32,21 @@ downloadLink: https://chiisana101.itch.io/split-clash
         SplitClash is a 2D arena fighting game where players can use different characters with unique abilities to fight each other. The game is based off of the game "Clash Royale" but with a design feature of a table touch screen.
     </p>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+     --------------------------------------------------------------------------------------------------
+    </p>    
+    <p>
+         One of my favorite projects I worked on during my second year. We had a small team, 2 developers and 2 artists. The task was to make a regular old game. No twist, no nothing. The premises of this project was to come up with and create a full game on our own, with some guidance if needen. Our team came up with the idea of a table touch screen game, where 2 players can play against each other on a table touch screen. The game is based off of the game "Clash Royale" but with a design feature of a table touch screen. The game is designed to be played on a table touch screen, but can be played on any android device with a touch screen.
     </p>
 </section>
 
 <section class="info-section">
     <h2 class="section-subtitle">My Role & Features</h2>
     <ul class="feature-list">
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Praesent vitae lectus ac tellus aliquet iaculis.</li>
-        <li>Donec scelerisque libero a ante dignissim, ac accumsan erat tristique.</li>
-        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
+        <li>Tower mechanics</li>
+        <li>Effects system</li>
+        <li>Audio Design</li>
+        <li>Balancing</li>
+        <li>Trailer</li>
     </ul>
 </section>
 
