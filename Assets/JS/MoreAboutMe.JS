@@ -6,6 +6,32 @@ const interestsData = {
         desc: "I have been training in selfdefense for 8 years now, and I'm not thinking of stopping anytime soon. The selfdefense style I practice is called American Kenpo Karate. It's a very practical style that focuses on self-preservation and de-escalation. It's also a lot of fun!",
         images: ["Images/AboutMe/Selfdefense/Selfdefense1.jpg", "Images/AboutMe/Selfdefense/Selfdefense2.jpg", "Images/AboutMe/Selfdefense/Selfdefense3.jpg", "Images/AboutMe/Selfdefense/Selfdefense4.jpg"]
     },
+    cycling: {
+        title: "Cycling",
+        desc: "Born in the best biking country there is, I definitely have a bike. Pratical and good for your health, but I don't just use it. Learning mechanics, cleaning and maintaing my bike is also a great hobby. There's more to everythingh if you just put the time in to it.",
+        images: ["Images/AboutMe/Cycling/Cycling1.jpg", "Images/AboutMe/Cycling/Cycling2.jpg", "Images/AboutMe/Cycling/Cycling3.jpg", "Images/AboutMe/Cycling/Cycling4.jpg"]
+    },
+    stargazing: {
+        title: "Stargazing",
+        desc: "The one thing most people never do is look up. There is so much to see if you just take the time to look up. On a clear night, you can see so many stars and planets. With just a little telescope I took these pictures. It's really cool.",
+        images: ["Images/AboutMe/Stargazing/Stargazing1.jpg", "Images/AboutMe/Stargazing/Stargazing2.jpg", "Images/AboutMe/Stargazing/Stargazing3.jpg", "Images/AboutMe/Stargazing/Stargazing4.jpg"]
+    },
+    walking: {
+        title: "Walking",
+        desc: "Besides cycling and driving a car, I ofcourse have to take care of the dog sometimes. I would almost consider it a sport, but a hobby would suffice. We go for walks in the woods, to the beach, or just around the neighbourhood. It's good for both of us.",
+        images: ["Images/AboutMe/Walking/Walking1.jpg", "Images/AboutMe/Walking/Walking2.jpg", "Images/AboutMe/Walking/Walking3.jpg", "Images/AboutMe/Walking/Walking4.jpg"]
+    },
+    shootingrange: {
+        title: "Shooting Range",
+        desc: "One of the more 'dangerous' looking hobbies I have, but it's really not. It's very peaceful and takes a lot of concentration. I practice shooting at targets to improve my accuracy and focus. I've been a member of the shooting club for about 2 years now and I really enjoy it.",
+        images: ["Images/AboutMe/ShootingRange/ShootingRange1.jpg", "Images/AboutMe/ShootingRange/ShootingRange2.jpg", "Images/AboutMe/ShootingRange/ShootingRange3.jpg", "Images/AboutMe/ShootingRange/ShootingRange4.jpg"]
+    },
+    army: {
+        title: "Army",
+        desc: "I haven't served in the army yet, but I plan to in the future. My grandfather served as in the marinecorps for 42 years and my father served as in the army, so I guess you can say it runs in the family.",
+        images: ["Images/AboutMe/Army/Army1.jpg", "Images/AboutMe/Army/Army2.jpg", "Images/AboutMe/Army/Army3.jpg", "Images/AboutMe/Army/Army4.jpg"]
+    },
+    
 
 };
 

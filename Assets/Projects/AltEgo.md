@@ -3,7 +3,7 @@ title: AltEgo
 tagline: A carnival gameshow experience
 role: Lead Developer
 timeline: 9 Weeks
-platform: PC/VR
+platform: PC VR
 tags:
   - Unreal Engine 5
   - Blueprints

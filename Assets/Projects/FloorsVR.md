@@ -3,7 +3,7 @@ title: Floors VR
 tagline: The game that will haunt your nerves
 role: Lead Developer
 timeline: 5 Weeks
-platform: Unity
+platform: PC VR
 tags:
   - Unity
   - C#

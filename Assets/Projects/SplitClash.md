@@ -3,7 +3,7 @@ title: SplitClash
 tagline: Battle each other with attacking monsters and defending towers on a touch screen table. Based on Clash Royale.
 role: Developer
 timeline: 9 Weeks
-platform: Unity
+platform: Touch Screen
 tags:
   - Unity
   - C#
