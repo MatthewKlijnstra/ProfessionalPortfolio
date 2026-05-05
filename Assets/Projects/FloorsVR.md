@@ -58,6 +58,7 @@ downloadLink: http://lzkchr.itch.io/whissis
 
 <h2 class="section-subtitle">Source Code Features</h2>
 
+<h3>Softlock Prevention</h3>
 <div class="feature-segment">
     <div class="code-container">
         <pre><code class="language-csharp">
@@ -89,6 +90,7 @@ Your browser does not support the video tag.
 
 </div>
 
+<h3>Softlock Prevention</h3>
 <div class="feature-segment">
     <div class="code-container">
         <pre><code class="language-csharp">

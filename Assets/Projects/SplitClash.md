@@ -54,6 +54,7 @@ downloadLink: https://chiisana101.itch.io/split-clash
 
 <h2 class="section-subtitle">Source Code Features</h2>
 
+<h3>Softlock Prevention</h3>
 <div class="feature-segment">
     <div class="code-container">
         <pre><code class="language-csharp">

@@ -15,8 +15,8 @@ gallery:
   - Images/Projects/CoastalCookout/CoastalCookout1.png
   - Images/Projects/CoastalCookout/CoastalCookout2.png
   - Images/Projects/CoastalCookout/CoastalCookout3.png
-sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
-downloadLink: http://lzkchr.itch.io/whissis
+sourceLink: https://github.com/BattlefieldGuy/Pirate-Burgers
+downloadLink: https://gijsc.itch.io/coastal-cookout
 ---
 
 <section class="info-section">
@@ -52,37 +52,105 @@ downloadLink: http://lzkchr.itch.io/whissis
 
 <h2 class="section-subtitle">Source Code Features</h2>
 
+<h3>Receipt System</h3>
 <div class="feature-segment">
     <div class="code-container">
         <pre><code class="language-csharp">
-// Example Code Snippet: Enemy AI Pathfinding
-public class EnemyAI : MonoBehaviour {
-    private NavMeshAgent agent;
-    public Transform player;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-    void Start() {
-        agent = GetComponent&lt;NavMeshAgent&gt;();
+public class BonnetjesManager : MonoBehaviour
+{
+/// <summary>
+/// This scrip is responsible for managing the receipts and other this related to receipts.
+///
+/// It houses a list of possible items that can be ordered, each with main and secondary ingredients.
+/// every item is represented by the Item class, which contains the item's name and its ingredients.
+///
+/// Once an item is created, it is sent to the ReceiptList script to be displayed as a receipt.
+/// </summary>
+
+    [System.Serializable]// ingredients list
+    public class Item// Item structure
+    {
+        public string name;
+        // Main ingredients are the core ingredients that cannot be removed, secondary's are optional
+        public List<string> MainIngredients;
+        public List<string> SecondaryIngredients;
+        // List of machines required to make this item, Possible: Grill, Fryer, Stove, Oven,
+        public List<string> RequiredMachines;
     }
 
-    void Update() {
-        if(Vector3.Distance(transform.position, player.position) &lt; 15f) {
-            agent.SetDestination(player.position);
-        }
+
+    // Items
+    public List<Item> ItemList;
+
+
+    //refs
+    private ReceiptList receiptList;
+
+
+    #region -- RECEIPT VARIABLES --
+    // Receipt Variables are used to adjust receipt generation during playtime
+    [Header("Receipt Variables")]
+    [Space(5), Tooltip("Set Starter receipt interval"), SerializeField]
+    private float receiptInterval = 5f;
+
+    [Space(5), Range(0f, 20f), SerializeField]
+    private float intervalOffsetRange = 5f;
+
+    private int amountOfItemsMade = 0;
+
+    #endregion
+
+    void Start()
+    {
+        receiptList = FindFirstObjectByType<ReceiptList>();
+        StartCoroutine(Interval());//temp
     }
+
+
+    /// <summary>
+    /// This method creates a new item with random ingredients.
+    /// using the reference list with possible items at the moment.
+    /// The item is then added to the receipt list if it exists.
+    /// </summary>
+    public void MakeItem()
+    {
+        Item item_ = ItemList[Random.Range(0, ItemList.Count)];
+
+        if (receiptList != null)
+            receiptList.AddOrder(item_);
+
+        amountOfItemsMade++;
+    }
+
+    #region - ENUMARATORS -
+
+    /// <summary>
+    /// Enumerator responsible for generating items at regular intervals.
+    /// </summary>
+    private IEnumerator Interval()
+    {
+        yield return new WaitForSeconds(receiptInterval);
+        MakeItem();
+        StartCoroutine(Interval());
+    }
+
+    #endregion
 
 }
 </code></pre>
 
 </div>
 <div class="video-container">
-<video autoplay loop muted playsinline>
-<source src="dummy.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+<iframe src="https://www.youtube.com/embed/zJQHt1eaK1A?si=LYr_6f0CKYvp5DZL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 </div>
 
+<h3>Softlock Prevention</h3>
 <div class="feature-segment">
     <div class="code-container">
         <pre><code class="language-csharp">
@@ -103,12 +171,7 @@ public class AirlockDoor : MonoBehaviour {
 
 </div>
 <div class="video-container">
-<iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-</iframe>
+<iframe src="https://www.youtube.com/embed/zJQHt1eaK1A?si=LYr_6f0CKYvp5DZL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 </div>
