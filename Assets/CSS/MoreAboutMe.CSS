@@ -55,11 +55,7 @@
 }
 
 .carousel-container.hidden {
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    /* Take out of flow when hidden so text doesn't look weird */
-    visibility: hidden;
+    display: none !important;
 }
 
 .carousel-track {

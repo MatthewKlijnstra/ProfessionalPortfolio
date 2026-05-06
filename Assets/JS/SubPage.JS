@@ -157,6 +157,13 @@ function populatePage(meta, mainMd, sourceMd) {
         } else {
             document.getElementById('dyn-source-content').innerHTML = "<p>No source details provided.</p>";
         }
+
+        // Apply syntax highlighting to code blocks
+        if (typeof hljs !== 'undefined') {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightElement(block);
+            });
+        }
     } else {
         document.getElementById('dyn-main-content').innerHTML = "<p>Error: Markdown parser not loaded.</p>";
     }
