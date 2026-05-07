@@ -12,7 +12,6 @@ heroImage: Images/Projects/VRRecording/VRRecordingMain.png
 gallery:
   - Images/Projects/VRRecording/VRRecordingMain.png
 sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
-downloadLink: http://lzkchr.itch.io/whissis
 ---
 
 <section class="info-section">

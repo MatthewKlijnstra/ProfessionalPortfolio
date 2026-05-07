@@ -19,8 +19,7 @@ gallery:
   - Images/Projects/DungeonShooter/DungeonShooter5.png
   - Images/Projects/DungeonShooter/DungeonShooter6.png
   - Images/Projects/DungeonShooter/DungeonShooter7.png
-sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
-downloadLink: http://lzkchr.itch.io/whissis
+sourceLink: https://github.com/BattlefieldGuy/DungeonShooter2D
 ---
 
 <section class="info-section">

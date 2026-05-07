@@ -16,7 +16,7 @@ gallery:
   - Images/Projects/LittleJumper/LittleJumper3.png
   - Images/Projects/LittleJumper/LittleJumper4.png
   - Images/Projects/LittleJumper/LittleJumper5.png
-sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
+sourceLink: https://github.com/GLU-CSD/platformerproject-BattlefieldGuy/tree/main/PlatformerProject
 downloadLink: https://battlefieldguy.itch.io/little-jumper
 ---
 
@@ -58,52 +58,136 @@ downloadLink: https://battlefieldguy.itch.io/little-jumper
 
 <h2 class="section-subtitle">Source Code Features</h2>
 
-<h3>Softlock Prevention</h3>
+<h3>Cinemachine system</h3>
 <div class="feature-segment">
     <div class="code-container">
         <pre><code class="language-csharp">
-// Example Code Snippet: Enemy AI Pathfinding
-public class EnemyAI : MonoBehaviour {
-    private NavMeshAgent agent;
-    public Transform player;
+/// Luckily Cinemachine does 99% of the work for you.
+/// You can add a dead zone around the player, so the camera won't be able to get to close to the player.
+/// You can also add a soft zone around the player, so the camera will be a bit more hesitant to get to close to the player.
+/// Finally you can add a smart follow system that will try to keep the player in frame.
 
-    void Start() {
-        agent = GetComponent&lt;NavMeshAgent&gt;();
-    }
-
-    void Update() {
-        if(Vector3.Distance(transform.position, player.position) &lt; 15f) {
-            agent.SetDestination(player.position);
-        }
-    }
-
-}
 </code></pre>
 
 </div>
 <div class="video-container">
-<video autoplay loop muted playsinline>
-<source src="dummy.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+<iframe
+            src="https://www.youtube.com/embed/fRZ34zppyOQ?si=x-bCUKOzaUw3Hllh"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
 </div>
 
 </div>
 
-<h3>Softlock Prevention</h3>
+<h3>Barrel Trap System</h3>
 <div class="feature-segment">
     <div class="code-container">
         <pre><code class="language-csharp">
-// Example Code Snippet: VR Interactions
-public class AirlockDoor : MonoBehaviour {
-    private Animator animator;
+/// Triggers Barrel effect.
 
-    void Start() {
-        animator = GetComponent&lt;Animator&gt;();
+using UnityEngine;
+
+public class BarrelEffect : MonoBehaviour
+{
+[SerializeField] private ParticleSystem[] \_particleSystems;
+
+    public void StartParticles()
+    {
+        for (int i = 0; i < _particleSystems.Length; i++)
+        {
+            _particleSystems[i].Play();
+        }
     }
 
-    public void OpenDoor() {
-        animator.SetTrigger("Open");
+}
+
+/// Barrel Hit, wil trigger actions uppon hitting the player.
+
+using System.Collections;
+using UnityEngine;
+
+public class BarrelHit : MonoBehaviour
+{
+private PlayerResetPoint \_playerReset;
+private Animation \_anim;
+[SerializeField] private ParticleSystem \_particleSystem1;
+[SerializeField] private ParticleSystem \_particleSystem2;
+
+    void Start()
+    {
+        _playerReset = FindObjectOfType<PlayerResetPoint>();
+        _anim = this.GetComponent<Animation>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            this.GetComponent<Collider>().isTrigger = false;
+            _particleSystem1.Play();
+            _particleSystem2.Play();
+            _anim.Stop();
+            _playerReset.ResetH();
+            StartCoroutine(enumerator());
+        }
+    }
+
+    private IEnumerator enumerator()
+    {
+        yield return new WaitForSeconds(2f);
+        this.GetComponent<Collider>().isTrigger = true;
+        _anim.Play();
+    }
+
+}
+
+///Barrel Sounds, Plays a pop sound when the barrel is popped and a crash sound when the barrel hits something.
+
+using UnityEngine;
+
+public class BarrelSounds : MonoBehaviour
+{
+[SerializeField] private AudioClip \_pop;
+[SerializeField] private AudioClip \_crash;
+private AudioSource \_source;
+
+    void Start()
+    {
+        _source = this.GetComponent<AudioSource>();
+    }
+    public void Pop()
+    {
+        _source.clip = _pop;
+        _source.Play();
+    }
+    public void Crash()
+    {
+        _source.clip = _crash;
+        _source.Play();
+    }
+
+}
+
+///Barrel Timeout, This script gives an added random timeout to the barrels, making them more unpredictable.
+
+using System.Collections;
+using UnityEngine;
+
+public class BarrelTimeOut : MonoBehaviour
+{
+[SerializeField] private float min = 1.5f;
+[SerializeField] private float max = 3.5f;
+
+    private Animation anim;
+    private void Start() => anim = this.GetComponent<Animation>();
+
+    private IEnumerator enumerator()
+    {
+        float i = Random.Range(min, max);
+        yield return new WaitForSeconds(i);
+        anim.Play();
     }
 
 }

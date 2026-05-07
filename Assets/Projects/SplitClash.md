@@ -395,7 +395,7 @@ public LayerMask Mask;
 </div>
 </div>
 
-<h3>Softlock Prevention</h3>
+<h3>Shop System</h3>
 <div class="feature-segment">
     <div class="code-container">
         <pre><code class="language-csharp">

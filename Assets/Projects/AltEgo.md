@@ -19,8 +19,7 @@ gallery:
   - Images/Projects/AltEgo/AltEgo5.png
   - Images/Projects/AltEgo/AltEgo6.png
   - Images/Projects/AltEgo/AltEgo7.png
-sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
-downloadLink: http://lzkchr.itch.io/whissis
+sourceLink: https://github.com/GLU-Gaming/KermisShooter/tree/main/ImposterSyndrome/Content/Matthew
 ---
 
 <section class="info-section">

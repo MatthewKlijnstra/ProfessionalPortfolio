@@ -19,8 +19,7 @@ gallery:
   - Images/Projects/Floors/Floors5.png
   - Images/Projects/Floors/Floors6.png
   - Images/Projects/Floors/Floors7.png
-sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
-downloadLink: http://lzkchr.itch.io/whissis
+sourceLink: https://github.com/BattlefieldGuy/Project-Bhpatics/tree/main/Assets/Dev%20folders/Matthew
 ---
 
 <section class="info-section">
@@ -50,6 +49,8 @@ downloadLink: http://lzkchr.itch.io/whissis
         <li>B-Haptics Integration</li>
         <li>B-Haptics Effects</li>
         <li>Jumpscare mechanics</li>
+        <li>FuseBox task</li>
+        <li>Key task</li>
         <li>XR Interaction Toolkit</li>
     </ul>
 </section>
@@ -58,29 +59,13 @@ downloadLink: http://lzkchr.itch.io/whissis
 
 <h2 class="section-subtitle">Source Code Features</h2>
 
-<h3>Softlock Prevention</h3>
+<h3>Haptic event calling System</h3>
 <div class="feature-segment">
     <div class="code-container">
-        <pre><code class="language-csharp">
-// Example Code Snippet: Enemy AI Pathfinding
-public class EnemyAI : MonoBehaviour {
-    private NavMeshAgent agent;
-    public Transform player;
-
-    void Start() {
-        agent = GetComponent&lt;NavMeshAgent&gt;();
-    }
-
-    void Update() {
-        if(Vector3.Distance(transform.position, player.position) &lt; 15f) {
-            agent.SetDestination(player.position);
-        }
-    }
-
-}
-</code></pre>
-
-</div>
+        <!-- Replace src with the path to your Unity visual scripting screenshot -->
+        <img src="Images/Projects/Floors/AIgraph1.png" alt="Unity Visual Scripting Logic" style="width: 100%; height: auto; border-radius: 8px;">
+        <img src="Images/Projects/Floors/AIgraph2.png" alt="Unity Visual Scripting Logic" style="width: 100%; height: auto; border-radius: 8px;">
+    </div>
 <div class="video-container">
 <video autoplay loop muted playsinline>
 <source src="dummy.mp4" type="video/mp4">
@@ -90,23 +75,235 @@ Your browser does not support the video tag.
 
 </div>
 
-<h3>Softlock Prevention</h3>
+<h3>FuseBox Task</h3>
 <div class="feature-segment">
     <div class="code-container">
         <pre><code class="language-csharp">
-// Example Code Snippet: VR Interactions
-public class AirlockDoor : MonoBehaviour {
-    private Animator animator;
 
-    void Start() {
-        animator = GetComponent&lt;Animator&gt;();
+/// FuzeBox switch detector
+
+using UnityEngine;
+
+public class FuzeSwitchDetector : MonoBehaviour
+{
+/// <summary>
+/// this script is responsible for the sequencing of the fuze box task
+/// </summary>
+private AudioSource audioSource;
+
+    private int switches = 0;
+
+    //reference call
+    private void Start() => audioSource = GetComponent<AudioSource>();
+
+    #region --- FUNCTIONS ---
+    public void ActivateSwitch()
+    {
+        switches++;
+        audioSource.Play();
+        CheckSwitchCount();
     }
 
-    public void OpenDoor() {
-        animator.SetTrigger("Open");
+    private void CheckSwitchCount()
+    {
+        if (switches >= 5)
+            Debug.Log(switches);
     }
+    #endregion
 
 }
+
+/// Fusebox controller
+
+using UnityEngine;
+
+public class fuseboxMatt : MonoBehaviour
+{
+/// <summary>
+/// fuze switch controller
+///
+/// controlls individual lights
+/// </summary>
+#region --- REFS & VARS ---
+[Header("References")]
+[SerializeField]
+private Animator AnimSwitch;
+
+    [SerializeField]
+    private GameObject LightGreen;
+
+    [SerializeField]
+    private GameObject LightRed;
+
+    [SerializeField]
+    private AudioSource audioSource;
+
+    private SwitchCounter switchCounter;
+
+    private bool isTrue = false;
+
+    #endregion
+
+    #region --- SETUP ---
+    void Start()
+    {
+        LightGreen.SetActive(false);
+        LightRed.SetActive(true);
+        switchCounter = FindFirstObjectByType<SwitchCounter>();
+    }
+    #endregion
+
+    #region --- TRIGGERS ---
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && SocketManager.WireChecker == true && !isTrue)
+        {
+            AnimSwitch.SetTrigger("SwitchOne");
+            LightGreen.SetActive(true);
+            LightRed.SetActive(false);
+            audioSource.Play();
+            switchCounter.AddCount();
+            isTrue = true;
+        }
+    }
+    #endregion
+
+}
+
+</code></pre>
+
+</div>
+<div class="video-container">
+<iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+</div>
+
+</div>
+
+<h3>Key Task</h3>
+<div class="feature-segment">
+    <div class="code-container">
+        <pre><code class="language-csharp">
+
+/// SocketEventsUpdate Script
+
+using System.Collections;
+using UnityEngine;
+
+public class SocketEventsUpdate : Task
+{
+/// <summary>
+/// key task
+///
+/// checks if task is done
+/// </summary>
+//refs
+[Header("lights")]
+[SerializeField]
+private GameObject Green;
+
+    [SerializeField]
+    private GameObject Red;
+
+    [SerializeField]
+    private GameObject Blue;
+
+    [SerializeField]
+    private GameObject Yellow;
+
+    [Header("Haptics event")]
+    [SerializeField]
+    private string haptic;
+
+    private BhapticsActivater bhapticsActivater;
+
+    //check
+    bool isTaskComplete = false;
+
+    private void Start() => bhapticsActivater = FindAnyObjectByType<BhapticsActivater>();
+
+    void Update()
+    { //check
+        if (!isTaskComplete)
+        {
+            if (
+                Green.activeInHierarchy
+                && Red.activeInHierarchy
+                && Blue.activeInHierarchy
+                && Yellow.activeInHierarchy
+            )
+                StartCoroutine(CompleteSequence());
+        }
+    }
+
+    private IEnumerator CompleteSequence()
+    {
+        isTaskComplete = true;
+
+        yield return new WaitForSeconds(0.5f);
+
+        FinishedTask();
+        if (haptic != null)
+            bhapticsActivater.SingleShotHaptic(haptic);
+    }
+
+    protected override void OnFinishedTask() { }
+
+}
+
+/// KeyTaskManager Script
+
+using System;
+using UnityEngine;
+
+public class KeyTaskManager : MonoBehaviour
+{
+/// <summary>
+/// this script is responsible for scattering all keys
+///
+/// array with transforms must have 4 minimum
+/// </summary>
+[Header("SpawnPoints")]
+[SerializeField]
+private Transform[] transforms;
+
+    #region --- FUNCTIONS ---
+    public void ScatterKeys(GameObject[] keys)
+    {
+        //scatter keys at random positions
+        foreach (GameObject key in keys)
+        {
+            int number = RandomPosition();
+            key.transform.position = transforms[number].position;
+            RemoveAt(ref transforms, number);
+        }
+    }
+    #endregion
+
+    #region --- ARRAY FUNCTIONS ---
+    private int RandomPosition()
+    {
+        return UnityEngine.Random.Range(0, transforms.Length); //return random position for key
+    }
+
+    private void RemoveAt<T>(ref T[] _array, int index)
+    {
+        for (int _a = index; _a < _array.Length - 1; _a++)
+        {
+            // moves ellements downards
+            _array[_a] = _array[_a + 1];
+        }
+        // resize array
+        Array.Resize(ref _array, _array.Length - 1);
+    }
+    #endregion
+
+}
+
 </code></pre>
 
 </div>
