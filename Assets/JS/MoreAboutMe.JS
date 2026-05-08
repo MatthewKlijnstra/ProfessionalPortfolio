@@ -18,7 +18,7 @@ const interestsData = {
     },
     pet: {
         title: "My Dog",
-        desc: "Besides cycling and driving a car, I ofcourse have to take care of the dog sometimes. I would almost consider it a sport, but a hobby would suffice. We go for walks in the woods, to the beach, or just around the neighbourhood. It's good for both of us.",
+        desc: "We have Sky for almost 8 years now, and she is also almost 8. A middle aged dog, but she acts like an oldie. I take care of her by walking her sometimes, but mostly it's my parents duty. I don't see it as a duty though, I like it when I go out for a walk, and it's good for both of us.",
         images: ["Images/AboutMe/Walking/Walking1.jpg", "Images/AboutMe/Walking/Walking2.jpg", "Images/AboutMe/Walking/Walking3.jpg", "Images/AboutMe/Walking/Walking4.jpg"]
     },
     shootingsports: {
