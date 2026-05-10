@@ -26,7 +26,7 @@ const interestsData = {
     },
     army: {
         title: "Army",
-        desc: "I haven't served in the army yet, but I plan to in the future. My grandfather served as a marine in the Marine Corps for 42 years and my father served in the army, so you could say it runs in the family.",
+        desc: "I haven't served in the army yet, but I plan to in the future. My grandfather served as a marine in the Dutch Marine Corps for 42 years and my father served in the Dutch army, so you could say it runs in the family.",
     },
     consolegaming: {
         title: "Console Gaming",
