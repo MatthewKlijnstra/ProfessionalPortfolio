@@ -63,8 +63,8 @@ sourceLink: https://github.com/BattlefieldGuy/Project-Bhpatics/tree/main/Assets/
 <div class="feature-segment">
     <div class="code-container">
         <!-- Replace src with the path to your Unity visual scripting screenshot -->
-        <img src="Images/Projects/Floors/AIgraph1.png" alt="Unity Visual Scripting Logic" style="width: 100%; height: auto; border-radius: 8px;">
-        <img src="Images/Projects/Floors/AIgraph2.png" alt="Unity Visual Scripting Logic" style="width: 100%; height: auto; border-radius: 8px;">
+        <img src="Images/Projects/Floors/AIGraph1.png" alt="Unity Visual Scripting Logic" style="width: 100%; height: auto; border-radius: 8px;">
+        <img src="Images/Projects/Floors/AIGraph2.png" alt="Unity Visual Scripting Logic" style="width: 100%; height: auto; border-radius: 8px;">
     </div>
 <div class="video-container">
 <video autoplay loop muted playsinline>
