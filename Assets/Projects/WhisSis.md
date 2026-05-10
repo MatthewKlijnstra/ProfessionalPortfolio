@@ -10,12 +10,12 @@ tags:
   - XR Interaction Toolkit
 heroImage: Images/Projects/WhisSis/WhisSisMain.png
 gallery:
-  - Images/Projects/WhisSis/WhisSis1.png
-  - Images/Projects/WhisSis/WhisSis2.png
-  - Images/Projects/WhisSis/WhisSis3.png
-  - Images/Projects/WhisSis/WhisSis4.png
-  - Images/Projects/WhisSis/WhisSis5.png
-  - Images/Projects/WhisSis/WhisSis6.png
+  - Images/Projects/WhisSis/Whissis1.png
+  - Images/Projects/WhisSis/Whissis2.png
+  - Images/Projects/WhisSis/Whissis3.png
+  - Images/Projects/WhisSis/Whissis4.png
+  - Images/Projects/WhisSis/Whissis5.png
+  - Images/Projects/WhisSis/Whissis6.png
   - Images/Projects/WhisSis/WhisSis7.png
   - Images/Projects/WhisSis/WhisSisMain.png
 sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
