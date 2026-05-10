@@ -21,7 +21,8 @@ gallery:
   - Images/Projects/SecondSight/SecondSight6.png
   - Images/Projects/SecondSight/SecondSightMain.png
   - Images/Projects/SecondSight/SecondSight7.png
-sourceLink: https://github.com/GLU-Gaming/twinstick-2024-c-p-s.git
+sourceLink:
+downloadLink: https://xrlabofficial.itch.io/second-sight
 ---
 
 <section class="info-section">
@@ -251,7 +252,7 @@ public FishFlockStates State;
 <div class="video-container">
 <video autoplay loop muted playsinline>
 <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
+            src=""
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -306,7 +307,7 @@ private float \_returnTime;
 </div>
 <div class="video-container">
 <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
+            src=""
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -405,7 +406,7 @@ private float \_migrationFrequency;
 </div>
 <div class="video-container">
 <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
+            src=""
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -503,7 +504,7 @@ private UnityEvent \_onPress;
 </div>
 <div class="video-container">
 <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
+            src=""
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>

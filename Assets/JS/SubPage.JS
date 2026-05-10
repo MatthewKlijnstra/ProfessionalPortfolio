@@ -56,7 +56,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function parseProjectData(mdText) {
-    const yamlRegex = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/;
+    // Handle both Unix (\n) and Windows (\r\n) line endings
+    const yamlRegex = /^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/;
     const match = mdText.match(yamlRegex);
     
     if (match) {
@@ -67,7 +68,7 @@ function parseProjectData(mdText) {
         let inList = false;
         let listKey = "";
 
-        yamlPart.split('\n').forEach(line => {
+        yamlPart.split(/\r?\n/).forEach(line => {
             if (line.trim().startsWith('- ')) {
                 if (inList) data[listKey].push(line.replace('- ', '').trim());
             } else if (line.includes(':')) {

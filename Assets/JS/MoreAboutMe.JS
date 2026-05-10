@@ -9,7 +9,6 @@ const interestsData = {
     cycling: {
         title: "Cycling",
         desc: "Born in the best biking country there is, I definitely have a bike. Pratical and good for your health, but I don't just use it. Learning mechanics, cleaning and maintaing my bike is also a great hobby. There's more to everythingh if you just put the time in to it.",
-        images: ["Images/AboutMe/Cycling/Cycling1.jpg", "Images/AboutMe/Cycling/Cycling2.jpg", "Images/AboutMe/Cycling/Cycling3.jpg", "Images/AboutMe/Cycling/Cycling4.jpg"]
     },
     stargazing: {
         title: "Stargazing",
@@ -27,8 +26,23 @@ const interestsData = {
     },
     army: {
         title: "Army",
-        desc: "I haven't served in the army yet, but I plan to in the future. My grandfather served as in the marinecorps for 42 years and my father served as in the army, so I guess you can say it runs in the family.",
+        desc: "I haven't served in the army yet, but I plan to in the future. My grandfather served as a marine in the Marine Corps for 42 years and my father served in the army, so you could say it runs in the family.",
     },
+    consolegaming: {
+        title: "Console Gaming",
+        desc: "Ofcourse I grew up with games. It all started on the classic WII playing Mario Kart and Wii Sports with my family. Now I play the big titles like Hogwarts Legacy and Star Wars Battlefront I & II on the playstation. Or the entire Splatoon franchise on the switch.",
+        images: ["Images/AboutMe/ConsoleGaming/ConsoleGame1.png", "Images/AboutMe/ConsoleGaming/ConsoleGame2.png", "Images/AboutMe/ConsoleGaming/ConsoleGame3.png", "Images/AboutMe/ConsoleGaming/ConsoleGame4.png"]
+    },
+    pcgaming: {
+        title: "PC Gaming",
+        desc: "With a pretty powerfull laptop and a good setup, I can run pretty much any game. My gaming style is all over the place. But from a good shooter to a single player experience, I enjoy it all. Expending my library of games is also something I like to do, always on the lookout for a good deal or a new game to try out.",
+        images: ["Images/AboutMe/PCGaming/PCGame1.png", "Images/AboutMe/PCGaming/PCGame2.png", "Images/AboutMe/PCGaming/PCGame3.png", "Images/AboutMe/PCGaming/PCGame4.png", "Images/AboutMe/PCGaming/PCGame5.png", "Images/AboutMe/PCGaming/PCGame6.png"]  
+    },
+    vrgaming: {
+        title: "VR Gaming",
+        desc: "Ever since I started playing on the playstation, I was hooked. The freedom of being able to move around and actualy duck, dodge and lay flat on the ground to take cover is something I really enjoy. From the first to the last headset, I've always been a fan of the VR dynamic. That's the main reason I started my journey as a VR developer.",
+        images: ["Images/AboutMe/VRGaming/VRGame1.png", "Images/AboutMe/VRGaming/VRGame2.png", "Images/AboutMe/VRGaming/VRGame3.png", "Images/AboutMe/VRGaming/VRGame4.png", "Images/AboutMe/VRGaming/VRGame5.png", "Images/AboutMe/VRGaming/VRGame6.png", "Images/AboutMe/VRGaming/VRGame7.png"]
+    }
     
 
 };

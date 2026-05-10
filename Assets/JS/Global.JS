@@ -113,4 +113,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- Welcome Toast Logic ---
+    const welcomeToast = document.getElementById('welcome-toast');
+    if (welcomeToast) {
+        // Show after a short delay
+        setTimeout(() => {
+            welcomeToast.classList.add('show');
+        }, 1500);
+
+        // Hide function
+        const hideToast = () => {
+            if (welcomeToast.classList.contains('show')) {
+                welcomeToast.classList.remove('show');
+                welcomeToast.classList.add('hide');
+                // Remove listeners after hiding
+                window.removeEventListener('scroll', hideToast);
+                window.removeEventListener('click', hideToast);
+            }
+        };
+
+        // Hide on scroll
+        window.addEventListener('scroll', hideToast, { passive: true });
+        
+        // Hide on any click
+        window.addEventListener('click', hideToast);
+    }
 });
