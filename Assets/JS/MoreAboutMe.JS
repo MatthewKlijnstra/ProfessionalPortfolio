@@ -9,7 +9,6 @@ const interestsData = {
     cycling: {
         title: "Cycling",
         desc: "Born in the best cycling country there is, I definitely have a bike. Pratical and good for your health, but I don't just use it. Learning mechanics, cleaning and maintaing my bike is also a great hobby. There's more to everythingh if you just put the time in to it.",
-        images: ["Images/AboutMe/Cycling/Cycling1.jpg", "Images/AboutMe/Cycling/Cycling2.jpg", "Images/AboutMe/Cycling/Cycling3.jpg"]
     },
     stargazing: {
         title: "Stargazing",
