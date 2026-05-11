@@ -33,7 +33,7 @@ downloadLink: https://xrlabofficial.itch.io/second-sight
         to learn it trough your eyes.
         The focus lay's on the diffrence between Blue and Green, in this experience you will together with 3 other
         people make choices about what color is shown on the Screen at that time. The others will then study your
-        actions and discusions ass the colors get increalingly more difficult to indentify.
+        actions and discusions as the colors get increalingly more difficult to indentify.
     </p>
     <p>
         --------------------------------------------------------------------------------------------------

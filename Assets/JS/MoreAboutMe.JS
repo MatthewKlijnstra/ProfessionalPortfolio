@@ -4,21 +4,22 @@ const interestsData = {
     selfdefense: {
         title: "Selfdefense",
         desc: "I have been training in selfdefense for 8 years now, and I'm not thinking of stopping anytime soon. The selfdefense style I practice is called American Kenpo Karate. It's a very practical style that focuses on self-preservation and de-escalation. It's also a lot of fun!",
-        images: ["Images/AboutMe/Selfdefense/Selfdefense1.jpg", "Images/AboutMe/Selfdefense/Selfdefense2.jpg", "Images/AboutMe/Selfdefense/Selfdefense3.jpg", "Images/AboutMe/Selfdefense/Selfdefense4.jpg"]
+        images: ["Images/AboutMe/Selfdefense/Selfdefense1.jpg", "Images/AboutMe/Selfdefense/Selfdefense2.jpg", "Images/AboutMe/Selfdefense/Selfdefense3.jpg", "Images/AboutMe/Selfdefense/Selfdefense4.jpg", "Images/AboutMe/Selfdefense/Selfdefense5.jpg", "Images/AboutMe/Selfdefense/Selfdefense6.jpg", "Images/AboutMe/Selfdefense/Selfdefense7.jpg", "Images/AboutMe/Selfdefense/Selfdefense8.jpg"]
     },
     cycling: {
         title: "Cycling",
-        desc: "Born in the best biking country there is, I definitely have a bike. Pratical and good for your health, but I don't just use it. Learning mechanics, cleaning and maintaing my bike is also a great hobby. There's more to everythingh if you just put the time in to it.",
+        desc: "Born in the best cycling country there is, I definitely have a bike. Pratical and good for your health, but I don't just use it. Learning mechanics, cleaning and maintaing my bike is also a great hobby. There's more to everythingh if you just put the time in to it.",
+        images: ["Images/AboutMe/Cycling/Cycling1.jpg", "Images/AboutMe/Cycling/Cycling2.jpg", "Images/AboutMe/Cycling/Cycling3.jpg"]
     },
     stargazing: {
         title: "Stargazing",
         desc: "The one thing most people never do is look up. There is so much to see if you just take the time to look up. On a clear night, you can see so many stars and planets. With just a little telescope I took these pictures. It's really cool.",
-        images: ["Images/AboutMe/Stargazing/Stargazing1.jpg", "Images/AboutMe/Stargazing/Stargazing2.jpg", "Images/AboutMe/Stargazing/Stargazing3.jpg", "Images/AboutMe/Stargazing/Stargazing4.jpg"]
+        images: ["Images/AboutMe/Stargazing/Stargazing1.jpg", "Images/AboutMe/Stargazing/Stargazing2.jpg", "Images/AboutMe/Stargazing/Stargazing3.jpg", "Images/AboutMe/Stargazing/Stargazing4.jpg", "Images/AboutMe/Stargazing/Stargazing5.jpg", "Images/AboutMe/Stargazing/Stargazing6.jpg", "Images/AboutMe/Stargazing/Stargazing7.jpg", "Images/AboutMe/Stargazing/Stargazing8.jpg", "Images/AboutMe/Stargazing/Stargazing9.jpg"]
     },
-    pet: {
+    dog: {
         title: "My Dog",
         desc: "We have Sky for almost 8 years now, and she is also almost 8. A middle aged dog, but she acts like an oldie. I take care of her by walking her sometimes, but mostly it's my parents duty. I don't see it as a duty though, I like it when I go out for a walk, and it's good for both of us.",
-        images: ["Images/AboutMe/Walking/Walking1.jpg", "Images/AboutMe/Walking/Walking2.jpg", "Images/AboutMe/Walking/Walking3.jpg", "Images/AboutMe/Walking/Walking4.jpg"]
+        images: ["Images/AboutMe/Dog/Dog1.jpg", "Images/AboutMe/Dog/Dog2.jpg", "Images/AboutMe/Dog/Dog3.jpg", "Images/AboutMe/Dog/Dog4.jpg", "Images/AboutMe/Dog/Dog5.jpg", "Images/AboutMe/Dog/Dog6.jpg", "Images/AboutMe/Dog/Dog7.jpg", "Images/AboutMe/Dog/Dog8.jpg", "Images/AboutMe/Dog/Dog9.jpg", "Images/AboutMe/Dog/Dog10.jpg", "Images/AboutMe/Dog/Dog11.jpg", "Images/AboutMe/Dog/Dog12.jpg"]
     },
     shootingsports: {
         title: "Shooting Sports",
