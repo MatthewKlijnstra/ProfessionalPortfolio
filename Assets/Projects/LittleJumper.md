@@ -196,7 +196,7 @@ public class BarrelTimeOut : MonoBehaviour
 </div>
 <div class="video-container">
 <iframe
-            src="https://www.youtube.com/embed/fRZ34zppyOQ?si=x-bCUKOzaUw3Hllh"
+            src="https://www.youtube.com/embed/LAYQcAbEw_E?si=co135v0VfVej8XZA"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
