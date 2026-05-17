@@ -155,6 +155,30 @@ function populatePage(meta, mainMd, sourceMd) {
         if (sourceMd.trim()) {
             const renderedSource = marked.parse(sourceMd);
             document.getElementById('dyn-source-content').innerHTML = renderedSource;
+
+            // Handle missing videos
+            const videoContainers = document.getElementById('dyn-source-content').querySelectorAll('.video-container');
+            videoContainers.forEach(container => {
+                let hasVideo = false;
+                const iframe = container.querySelector('iframe');
+                const video = container.querySelector('video');
+
+                if (iframe && iframe.getAttribute('src') && iframe.getAttribute('src').trim() !== '') {
+                    hasVideo = true;
+                }
+                if (video) {
+                    const source = video.querySelector('source');
+                    if (source && source.getAttribute('src') && source.getAttribute('src') !== 'dummy.mp4' && source.getAttribute('src').trim() !== '') {
+                        hasVideo = true;
+                    } else if (video.getAttribute('src') && video.getAttribute('src') !== 'dummy.mp4' && video.getAttribute('src').trim() !== '') {
+                        hasVideo = true;
+                    }
+                }
+
+                if (!hasVideo) {
+                    container.innerHTML = '<div class="missing-video-text">Video demonstration will be added later!</div>';
+                }
+            });
         } else {
             document.getElementById('dyn-source-content').innerHTML = "<p>No source details provided.</p>";
         }
