@@ -45,6 +45,7 @@ downloadLink: https://gijsc.itch.io/coastal-cookout
         <li>Sub Scrum Master</li>
         <li>Random Receipt Generator</li>
         <li>Recipe List Constructor</li>
+        <li>VR Interactions</li>
     </ul>
 </section>
 

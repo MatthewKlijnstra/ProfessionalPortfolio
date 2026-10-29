@@ -35,7 +35,7 @@ downloadLink: https://chiisana101.itch.io/split-clash
      --------------------------------------------------------------------------------------------------
     </p>    
     <p>
-         One of my favorite projects I worked on during my second year. We had a small team, 2 developers and 2 artists. The task was to make a regular old game. No twist, no nothing. The premises of this project was to come up with and create a full game on our own, with some guidance if needen. Our team came up with the idea of a table touch screen game, where 2 players can play against each other on a table touch screen. The game is based off of the game "Clash Royale" but with a design feature of a table touch screen. The game is designed to be played on a table touch screen, but can be played on any android device with a touch screen.
+         One of my favorite projects I worked on during my second year. We had a small team, 2 developers and 2 artists. The task was to make a regular old game. No twist, no nothing. The premises of this project was to come up with and create a full game on our own, with some guidance if needed. Our team came up with the idea of a table touch screen game, where 2 players can play against each other on it. The game is based off of the game "Clash Royale" but with a design feature of a table touch screen. The game is designed to be played on said hardware, but it can also be played on any Android device with a touch screen.
     </p>
 </section>
 

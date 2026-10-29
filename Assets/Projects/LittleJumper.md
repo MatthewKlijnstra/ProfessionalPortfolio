@@ -37,7 +37,7 @@ downloadLink: https://battlefieldguy.itch.io/little-jumper
     <p>
         This project was a school assignment where we had to make a platformer game. The goal was to make a game that could be played on multiple platforms. 
         The platforms I ended up with are PC, steam-deck and HTML. I wanted to make more versions but sadly that wasn't possible in the given time.
-        Luckily I had built in keyboard/mouse and controller support from the start, so you play it from more platforms than planned.
+        Luckily I had built in keyboard/mouse and controller support from the start, so you can play it on more platforms than planned.
     </p>
         
 </section>

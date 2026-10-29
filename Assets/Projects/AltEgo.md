@@ -32,7 +32,7 @@ sourceLink: https://github.com/GLU-Gaming/KermisShooter/tree/main/ImposterSyndro
     </p>
     <p>
         This was a speacial project for the HLO. The HLO is a Hybrid learning environment(Hybride Leeromgeving in Dutch).
-        My class of 14 and 5 students from the Media College Amsterdam worked together in a group of 19 students to create 5 different games. Each game was based on a theme chosen by a student from the MA. AltEgo was based on the theme of Imposter Syndrome. All the projects where made in Unreal Engine 5 with motion capture and VR included.
+        My class of 14 and 5 students from the Media College Amsterdam(MA) worked together in a group of 19 students to create 5 different games. Each game was based on a theme chosen by a student from the MA. AltEgo was based on the theme of Imposter Syndrome. All the projects where made in Unreal Engine 5 with motion capture and VR included.
     </p>
 </section>
 
